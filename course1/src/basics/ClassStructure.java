@@ -79,6 +79,8 @@ public class ClassStructure { // curly brace pairs {} define Java blocks of code
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        //use the scanner resource, then close it
+        scanner.close();
     }
 
 }
