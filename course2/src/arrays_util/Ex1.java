@@ -5,7 +5,6 @@ import java.util.Arrays;
 /**
  * @author cvoinea
  *
- * java.multiuserchat.util.Arrays class contains static methods for manipulating arrays
  * https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
  *
  */
