@@ -1,0 +1,15 @@
+1. Scrieti un program Java care sa gaseasca cel mai lung cuvant dintr-un fisier text.
+
+2. Scrieti un program Java care sa adauge continutul clasei curente Java in fisierul text utilizat la exercitiul anterior.
+
+3. Scrieti un program Java care sa salveze intr-un array, linie cu linie, continutul fisierului folosit la primul exercitiu.
+
+4. În criptografie, cifrul lui Cezar este una dintre cele mai simple și mai cunoscute tehnici de criptare. Este un tip de cifru al substituției,
+în care fiecare literă din textul inițial este înlocuită cu o literă care se află în alfabet la o distanță fixă față de cea înlocuită.
+De exemplu, cu o deplasare de cinci poziții în alfabetul limbii române, A este înlocuit cu D, Ă devine E și așa mai departe.
+Această metodă este numită așa după Iulius Cezar, care o folosea pentru a comunica cu generalii săi.
+    Creati o aplicatie Java care sa contina:
+a. o functionalitate de codare a continutului (in limba romana) unui fisier text, folosind un offset la alegere.
+Continutul rezultat se va salva in alt fisier.
+b. o functionalitate de decodare a mesajului rezultat la punctul a. Scrieti rezultatul in alt fisier si comparati-i continutul cu cel initial, necodat.
+

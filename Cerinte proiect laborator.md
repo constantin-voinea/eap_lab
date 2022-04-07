@@ -5,7 +5,7 @@
     • să se implementeze cerințele date
 
 
-Termene de predare:
+Termene de avut in vedere pe etape:
     • Etapa I: 4 aprilie 2022
     • Etapa II: 2 mai 2022
     • Etapa III: 23 mai 2022
@@ -20,7 +20,7 @@ o lista cu cel puțin 8 tipuri de obiecte.
     Sa se implementeze în limbajul Java o aplicație pe baza celor definite la primul punct.
     Aplicația va conține:
      • clase simple cu atribute private / protected și metode de acces
-     • cel puțin 2 colecții diferite capabile să gestioneze obiectele definite anterior (eg: List, Set, Map, etc.)
+     • cel puțin 2 colecții diferite capabile să gestioneze obiectele definite anterior (ex: List, Set, Map, etc.)
        dintre care cel puțin una sa fie sortata – se vor folosi array-uri uni- /bidimensionale în cazul în care
        nu se parcurg colectiile pana la data checkpoint-ului.
      • utilizare moștenire pentru crearea de clase adiționale și utilizarea lor în cadrul colecțiilor;
