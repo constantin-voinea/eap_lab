@@ -1,11 +1,16 @@
 package javaio.serialization;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * @author cvoinea
  *
- * marker interface (Cloneable, Serializable)
+ * marker interfaces (Cloneable, Serializable)
+ * java.io.Serializable --> marker interface that classes must implement if they are to be serialized and deserialized
+ *
+ * if the parent class of a serialized subclass object is not serializable, inherited members are not serialized
+ * in the previous scenario, in order to deserialize an object of a subclass, the superclass must have a no-args constructor available
  */
 public class Person implements Serializable {
 
@@ -39,5 +44,18 @@ public class Person implements Serializable {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }
