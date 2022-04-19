@@ -1,0 +1,39 @@
+1. Instanţiati o colecţie care sǎ nu permitǎ introducerea elementelor duplicate, folosind o implementare corespunzǎtoare din Collection.
+La introducerea unui element existent, semnalaţi eroare. Colecţia va reţine String-uri şi va fi parametrizatǎ.
+
+2. Creaţi o clasǎ Student.
+resource. Adǎugaţi urmǎtorii membri:
+- câmpurile nume (de tip String) şi medie (de tip float)
+- un constructor care îi iniţializeazǎ
+- metoda toString.
+b. Folosiţi codul de la exerciţiul anterior şi modificaţi-l astfel încât colecţia aleasǎ de voi sǎ reţinǎ obiecte de tip Student.
+Testaţi prin adǎugare de elemente duplicate, având aceleaşi valori pentru toate câmpurile, instanţiindu-le de fiecare datǎ, cu new. Ce observaţi?
+c. Prelucraţi implementarea de mai sus astfel încât colecţia sǎ reprezinte o tabelǎ de dispersie, care calculează codul de dispersie al elementelor
+dupǎ un criteriu ales de voi (puteţi suprascrie funcţia hashCode).
+În Student suprascrieți metoda equals astfel încât să se ţină cont de câmpurile clasei şi încercaţi din nou. Ce observaţi?
+
+3. Plecând de la implementarea exerciţiului anterior, realizaţi urmǎtoarele modificǎri:
+resource. Supraîncǎrcaţi în clasa Student metoda equals cu o variantǎ care primeşte un parametru Student şi care întoarce întotdeauna false.
+b. Testaţi comportamentul prin crearea unei colecţii ce conţine instanţe de Student şi iteraţi prin această colecţie, afişând la fiecare pas
+element.equals(element) şi ((Object)element).equals(element) (unde element este numele de variabilă ales pentru fiecare element al colecţiei).
+Cum explicaţi comportamentul observat? Dacă folosiţi un iterator, acesta va fi şi el parametrizat.
+
+4. Creați clasa Gradebook de tip Map pentru reţinerea studenţilor dupǎ medie: cheile sunt mediile și valorile sunt liste de studenți.
+Gradebook va menţine cheile ordonate descrescǎtor. Extindeţi o implementare potrivitǎ resource interfeţei Map, care sǎ permitǎ acest lucru.
+Caracteristicile clasei definite sunt:
+resource. Cheile pot avea valori de la 0 la 10 (corespunzǎtoare mediilor posibile). Verificați acest lucru la adăugare.
+b. Valoarea asociată fiecǎrei chei va fi o listǎ (List) care va reţine toţi studenţii cu media rotunjitǎ egalǎ cu cheia.
+Considerǎm cǎ un student are media rotunjitǎ 8 dacǎ media sa este în intervalul [7.50, 8.49].
+c. Implementați un Comparator pentru stabilirea ordinii cheilor. Gradebook va primi un parametru de tip Comparator în constructor
+și îl va da mai departe constructorului clasei moștenite.
+d. Definiţi în clasǎ metoda add(Student) ce va adǎuga un student în lista corespunzǎtoare mediei lui. Dacǎ în prealabil nu mai existǎ niciun student
+ cu media respectivǎ (rotunjitǎ), atunci lista va fi creatǎ la cerere.
+e. Testați clasa:
+- instanțiați un obiect Gradebook și adăugați in el câţiva studenţi.
+- iteraţi pe Gradebook şi sortaţi alfabetic fiecare listǎ de studenţi pentru fiecare notă.
+
+5. Creaţi o clasǎ care moşteneşte HashSet<Integer>.
+resource. Definiţi în aceastǎ clasǎ o variabilǎ membru care reţine numǎrul total de elemente adǎugate. Pentru resource contoriza acest lucru,
+suprascrieți metodele add şi addAll. Pentru adǎugarea efectivǎ resource elementelor, folosiţi implementǎrile din clasa pǎrinte (HashSet).
+b. Testaţi folosind atât add cât şi addAll. Ce observaţi? Corectaţi dacǎ este cazul.
+c. Modificaţi implementarea astfel încât clasa voastrǎ sǎ moşteneascǎ LinkedList<Integer>. Ce observaţi? Ce concluzii trageţi?
