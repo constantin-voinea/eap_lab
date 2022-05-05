@@ -19,7 +19,7 @@ public class EmployeeService {
      * Services have a way of obtaining backing repositories.
      * One service can use multiple (or no) repositories.
      */
-    private final EmployeeRepository employeeRepository = new EmployeeRepository();
+    private final EmployeeRepository employeeRepository = EmployeeRepository.getInstance();
 
     /**
      * Registers a new employee in the system.
