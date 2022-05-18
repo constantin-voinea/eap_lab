@@ -7,6 +7,10 @@ public class TestImutabilitate {
 
     public static void main(String[] args) {
 
+        String s1 = "imutabil";
+        s1 = s1 + "new";
+        System.out.println(s1 + " aaaa");
+
         Adresa adresaMutabila = new Adresa("Unirii", 10);
         System.out.println(adresaMutabila);
         Persoana persoana = new Persoana(1, "Ion", adresaMutabila);
